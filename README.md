@@ -8,10 +8,10 @@ A full-stack movie management application built with Go (backend) and React (fro
 
 ### Vercel Deployent - https://go-project-1-nz6r.vercel.app/
 ### Railway Deployment - https://go-project-1-production.up.railway.app/movies
-change /movies -- > /movies/{id} for get by id
-change /movies -- > /movies/{id} for delete by id
-change /movies -- > /movies/{id} for update by id with body
-change /movies -- > /movies/ for create with body
+- change /movies -- > /movies/{id} for get by id
+- change /movies -- > /movies/{id} for delete by id
+- change /movies -- > /movies/{id} for update by id with body
+- change /movies -- > /movies/ for create with body
 
 ## Features
 
