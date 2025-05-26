@@ -116,7 +116,7 @@ func main(){
 	fmt.Printf("Starting the server at port :5000\n")
 
     corsHandler := handlers.CORS(
-        handlers.AllowedOrigins([]string{"http://localhost:5000", "http://localhost:5173"}),
+        handlers.AllowedOrigins([]string{"http://localhost:5000", "http://localhost:5173","https://go-project-1-8pat.vercel.app"}),
         handlers.AllowedMethods([]string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}),
         handlers.AllowedHeaders([]string{"Content-Type"}),
     )
