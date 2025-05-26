@@ -10,6 +10,7 @@ import(
 	// Importing the Gorilla Mux router package
 	"github.com/gorilla/mux"
 	"github.com/gorilla/handlers"
+	"os"
 )
 
 type Movie struct{
@@ -119,6 +120,11 @@ func main(){
         handlers.AllowedMethods([]string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}),
         handlers.AllowedHeaders([]string{"Content-Type"}),
     )
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "5000"
+	}
 
 	log.Fatal(http.ListenAndServe(":5000",corsHandler(r)));
 }

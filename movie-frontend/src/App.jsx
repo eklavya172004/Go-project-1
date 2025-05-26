@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit2, Trash2, Film, Search, User } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL =  import.meta.env.VITE_API_BASE;
 
 const MovieApp = () => {
   const [movies, setMovies] = useState([]);
