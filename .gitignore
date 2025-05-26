@@ -1,0 +1,36 @@
+# Ignore Go build outputs
+*.exe
+*.out
+*.test
+
+# Node modules
+/movie-frontend/node_modules
+
+# Build
+/movie-frontend/dist
+
+# Env
+*.env
+
+/movie-frontend/logs
+/movie-frontend/*.log
+/movie-frontend/npm-debug.log*
+/movie-frontend/yarn-debug.log*
+/movie-frontend/yarn-error.log*
+/movie-frontend/pnpm-debug.log*
+/movie-frontend/lerna-debug.log*
+
+/movie-frontend/dist
+/movie-frontend/dist-ssr
+/movie-frontend/*.local
+
+# Editor directories and files
+/movie-frontend/.vscode/*
+/movie-frontend/!.vscode/extensions.json
+/movie-frontend/.idea
+/movie-frontend/.DS_Store
+/movie-frontend/*.suo
+/movie-frontend/*.ntvs*
+/movie-frontend/*.njsproj
+/movie-frontend/*.sln
+/movie-frontend/*.sw?
